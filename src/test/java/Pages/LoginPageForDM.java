@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.Constants;
 
 public class LoginPageForDM extends BaseClassForDM {
 
@@ -36,12 +37,14 @@ public class LoginPageForDM extends BaseClassForDM {
 
     public void setUserName()
     {
-        txt_userName.sendKeys("rpcdm2019+qauto@gmail.com");
+        //txt_userName.sendKeys("rpcdm2019+qauto@gmail.com");
+        txt_userName.sendKeys(Constants.PROCTOR_USERID);
     }
 
     public void setPassword()
     {
-        txt_PassWord.sendKeys("password1");
+        //txt_PassWord.sendKeys("password1");
+        txt_PassWord.sendKeys(Constants.PROCTOR_PWD);
     }
 
     public void clickOnButton()
