@@ -27,12 +27,9 @@ public class BaseClassForDM {
     {
         System.setProperty("webdriver.chrome.driver", "C:/Users/Adeptpros/Downloads/assessments-automation-master/assessments-automation-master/Base_DM/src/main/resources/chromedriver.exe");
         driver= new ChromeDriver();
-       driver.manage().window().maximize();
-       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-     //  driver.navigate().to("http://datamanagerqand.rpcsys.hmco.com/BalancedManagement/user/signin");
-       /* fLib= new FIleLib(driver);
-        driver.get(fLib.getValue("Proctor_url"));*/
-       driver.get(Constants.PROCTOR_URL);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.get(Constants.PROCTOR_URL);
 
 
 
