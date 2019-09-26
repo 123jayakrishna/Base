@@ -1,5 +1,6 @@
 package utils;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,17 +28,18 @@ public class BaseClassForDM {
 
     public void navigateTo(String Key) throws Exception
     {
-        /*System.setProperty("webdriver.chrome.driver", "C:/Users/Adeptpros/Downloads/assessments-automation-master/assessments-automation-master/Base_DM/src/main/resources/chromedriver.exe");
-        driver= new ChromeDriver();*/
+
         if(Key.equals("chrome") ) {
-            System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
 
 
         else if (Key.equals("firefox"))
         {
-            System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe");
+
+            WebDriverManager.firefoxdriver().setup();
             driver= new FirefoxDriver();
 
         }
