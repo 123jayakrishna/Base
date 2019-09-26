@@ -21,12 +21,10 @@ public class StepperForProctoring extends BaseClassForDM {
     @Given("open chrome browser")
     public void open_chrome_browser() throws Exception {
         navigateTo("firefox");
-
     }
 
     @When("Login into Data Manager site")
     public void login_into_Data_Manager_site() {
-
 
     }
 
@@ -34,7 +32,6 @@ public class StepperForProctoring extends BaseClassForDM {
     public void enter_username() {
         lPage= new LoginPageForDM(driver);
         lPage.setUserName();
-
     }
 
     @When("enter password")
@@ -42,22 +39,18 @@ public class StepperForProctoring extends BaseClassForDM {
         lPage= new LoginPageForDM(driver);
         lPage.setPassword();
 
-
     }
 
     @When("Click on signIn")
     public void click_on_signIn() {
         lPage= new LoginPageForDM(driver);
         lPage.clickOnButton();
-
     }
 
     @When("Goto proctor page")
     public void goto_proctor_page() {
         hPage= new HomePageForDM(driver);
         hPage.clickOnProctor();
-
-
     }
 
     @Then("Create a Test Session")
@@ -67,9 +60,6 @@ public class StepperForProctoring extends BaseClassForDM {
         pSessPage.selectGrade();
         pSessPage.setSessionId();
         driver.close();
-
     }
-
-
 
 }

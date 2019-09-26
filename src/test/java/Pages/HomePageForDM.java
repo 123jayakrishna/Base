@@ -18,7 +18,6 @@ public class HomePageForDM extends BaseClassForDM {
     @FindBy(xpath = "//a[contains(text(),'Assessments')]/../ul/li/a")
     private WebElement btn_TestEvents;
 
-
     @FindBy(xpath = "//a[contains(text(),'Assessments')]/../../li/a[contains(text(),'Procto')]")
     private WebElement btn_proctor;
 

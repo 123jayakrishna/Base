@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/FeatureForProctoring.feature",
         glue = {"stepDefinition"}
 )
-
 public class RunnerForProctoring {
 
 }
