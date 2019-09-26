@@ -27,5 +27,7 @@ public class StudentPage extends BaseClassForDM {
         txt_StudentId.sendKeys(Constants.STUDENT_ID);
         txt_SessionCode.sendKeys(Constants.SESSION_ID);
         btn_Login.click();
+
+
     }
 }
