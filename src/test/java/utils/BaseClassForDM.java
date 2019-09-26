@@ -29,13 +29,13 @@ public class BaseClassForDM {
     {
         /*System.setProperty("webdriver.chrome.driver", "C:/Users/Adeptpros/Downloads/assessments-automation-master/assessments-automation-master/Base_DM/src/main/resources/chromedriver.exe");
         driver= new ChromeDriver();*/
-        if(Key.equals(Constants.BROWSER) ) {
+        if(Key.equals("chrome") ) {
             System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
             driver = new ChromeDriver();
         }
 
 
-        else if (Key.equals(Constants.BROWSER))
+        else if (Key.equals("firefox"))
         {
             System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver.exe");
             driver= new FirefoxDriver();
