@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/FeatureForProctoring.feature",
-glue = {"stepDefinition"}
-       )
+        glue = {"stepDefinition"}
+)
 
 public class RunnerForProctoring {
 
