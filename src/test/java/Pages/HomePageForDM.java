@@ -27,7 +27,6 @@ public class HomePageForDM extends BaseClassForDM {
     {
         btn_Assessment.click();
         btn_TestEvents.click();
-        System.out.println("");
     }
 
     public  void clickOnProctor()

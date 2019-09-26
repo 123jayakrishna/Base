@@ -8,9 +8,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 
-public class StepperForAssessProc extends BaseClassForDM {
+public class StepperForAssessmentProctor extends BaseClassForDM {
 
-    public StepperForAssessProc()
+    public StepperForAssessmentProctor()
     {
         super(driver);
     }
