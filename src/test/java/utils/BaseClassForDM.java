@@ -44,8 +44,9 @@ public class BaseClassForDM {
 
         }
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        webDriverCommon= new WebDriverCommonUtils(driver);
+        webDriverCommon.maximizeTheWindow(driver);
+        webDriverCommon.waitForPageToLoad(driver,20);
         driver.get(Constants.PROCTOR_URL);
 
 
