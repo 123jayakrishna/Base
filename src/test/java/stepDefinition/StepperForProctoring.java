@@ -1,13 +1,12 @@
 package stepDefinition;
 
-import Pages.BaseClassForDM;
+import utils.BaseClassForDM;
 import Pages.HomePageForDM;
 import Pages.LoginPageForDM;
 import Pages.ProctorSessionForDM;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
 
 public class StepperForProctoring extends BaseClassForDM {
     public LoginPageForDM lPage;

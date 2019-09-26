@@ -3,6 +3,7 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.BaseClassForDM;
 import utils.Constants;
 
 public class LoginPageForDM extends BaseClassForDM {

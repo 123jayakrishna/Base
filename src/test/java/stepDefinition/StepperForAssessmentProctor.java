@@ -1,9 +1,8 @@
 package stepDefinition;
 
-import Pages.BaseClassForDM;
+import utils.BaseClassForDM;
 import Pages.HomePageForDM;
 import Pages.LoginPageForDM;
-import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
