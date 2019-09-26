@@ -20,7 +20,7 @@ public class StepperForProctoring extends BaseClassForDM {
 
     @Given("open chrome browser")
     public void open_chrome_browser() throws Exception {
-        navigateTo();
+        navigateTo("firefox");
 
     }
 

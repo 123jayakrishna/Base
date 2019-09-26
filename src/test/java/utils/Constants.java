@@ -13,6 +13,7 @@ public final class Constants {
 
     public static final String STUDENT_ID = "";
     public static final String SESSION_ID = "";
+    public static final String BROWSER = "firefox";
 }
 
 
