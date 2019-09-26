@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Base_DM" />
+        <module name="DM-Reskin" />
       </profile>
     </annotationProcessing>
   </component>

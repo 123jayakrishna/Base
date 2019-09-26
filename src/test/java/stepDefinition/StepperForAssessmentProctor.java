@@ -19,7 +19,7 @@ public class StepperForAssessmentProctor extends BaseClassForDM {
     public HomePageForDM hPage;
 
     @Given("Open Chrome browser and navigate to DM")
-    public void open_Chrome_browser_and_navigate_to_DM() {
+    public void open_Chrome_browser_and_navigate_to_DM() throws Exception {
         navigateTo();
 
     }
