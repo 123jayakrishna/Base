@@ -18,7 +18,7 @@ public class ProctorSessionForDM extends BaseClassForDM {
     private WebElement btn_WalkInStudent;
 
     @FindBy(id="studentLookup")
-    private WebElement byn_StudentLookUp;
+    private WebElement bytn_StudentLookUp;
 
     @FindBy(id="testevent")
     private WebElement dDown_TestEvent;
@@ -43,7 +43,7 @@ public class ProctorSessionForDM extends BaseClassForDM {
 
     public void clickOnStudentLookUp()
     {
-        byn_StudentLookUp.click();
+        btn_StudentLookUp.click();
     }
 
     public void selectTestEvent()
