@@ -1,4 +1,4 @@
-package stepDefinition;
+package testsuits.steps;
 
 import utils.BaseClassForDM;
 import Pages.HomePageForDM;

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BaseClassForDM;
-import utils.Constants;
+import config.Constants;
 
 public class StudentPage extends BaseClassForDM {
 
