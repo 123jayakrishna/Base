@@ -83,7 +83,7 @@ public class BaseClassForDM {
     public void takeAScreenShot(String methodName) throws Exception
     {
         File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File dst= new File("./Screen/"+methodName+".png");
+        File dst= new File("./ScreenShots/"+methodName+".png");
         FileUtils.copyFile(src,dst);
     }
 }
