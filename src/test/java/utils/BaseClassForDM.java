@@ -80,10 +80,10 @@ public class BaseClassForDM {
      * This method is used to take screenShot.
      * @throws Exception
      */
-    public void takeAScreenShot() throws Exception
+    public void takeAScreenShot(String methodName) throws Exception
     {
         File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File dst= new File("./Screen/New.png");
+        File dst= new File("./Screen/"+methodName+".png");
         FileUtils.copyFile(src,dst);
     }
 }
