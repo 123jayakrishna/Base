@@ -20,18 +20,21 @@ public class StepperForAssessmentProctor extends BaseClassForDM {
     @Given("Open Chrome browser and navigate to DM")
     public void open_Chrome_browser_and_navigate_to_DM() throws Exception {
         navigateTo("firefox");
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
     @When("User Enter user name")
-    public void user_Enter_user_name() {
+    public void user_Enter_user_name() throws Exception{
         lPage= new LoginPageForDM(driver);
         lPage.setUserName();
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
     @When("User enter password")
-    public void user_enter_password() {
+    public void user_enter_password() throws Exception{
         lPage= new LoginPageForDM(driver);
         lPage.setPassword();
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
     @When("User click on SignIn")
@@ -39,13 +42,14 @@ public class StepperForAssessmentProctor extends BaseClassForDM {
         lPage= new LoginPageForDM(driver);
         lPage.clickOnButton();
         System.out.println("Take screenShot");
-        takeAScreenShot();
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
     @When("User navigate to Assessment page")
-    public void user_navigate_to_Assessment_page() {
+    public void user_navigate_to_Assessment_page() throws Exception{
         hPage= new HomePageForDM(driver);
         hPage.clickOnAssessment();
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
 
     }
 
@@ -55,9 +59,10 @@ public class StepperForAssessmentProctor extends BaseClassForDM {
     }
 
     @When("User navigate to Proctor page")
-    public void user_navigate_to_Proctor_page() {
+    public void user_navigate_to_Proctor_page() throws Exception{
         hPage= new HomePageForDM(driver);
         hPage.clickOnProctor();
+        takeAScreenShot(new Object(){}.getClass().getEnclosingMethod().getName());
     }
 
     @Then("Browser should be closed")
