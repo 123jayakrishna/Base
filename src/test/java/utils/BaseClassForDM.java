@@ -1,5 +1,6 @@
 package utils;
 
+import config.WebDriverCommonUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -9,18 +10,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
-import utils.Constants;
+import config.Constants;
 
-
-import utils.WebDriverCommonUtils;
 
 import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 public class BaseClassForDM {
 
     public static WebDriver driver;
-    public  WebDriverCommonUtils webDriverCommon;
+    public WebDriverCommonUtils webDriverCommon;
 
     public BaseClassForDM(WebDriver driver)
     {

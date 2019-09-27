@@ -1,13 +1,12 @@
-package TestRunners;
+package testsuits;
 
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import jdk.nashorn.internal.objects.annotations.Optimistic;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/FeatureForAssessProc.feature",
-        glue = "stepDefinition")
+        glue = "testsuits/steps")
 public class RunnerForAssessmentProctor {
 }

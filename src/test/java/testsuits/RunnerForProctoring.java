@@ -1,4 +1,4 @@
-package TestRunners;
+package testsuits;
 
 
 import io.cucumber.junit.Cucumber;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/FeatureForProctoring.feature",
-        glue = {"stepDefinition"}
+        glue = {"testsuits/steps"}
 )
 public class RunnerForProctoring {
 
