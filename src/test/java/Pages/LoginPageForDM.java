@@ -35,15 +35,15 @@ public class LoginPageForDM extends BaseClassForDM {
 
 
 
-
     public void setUserName()
     {
-        txt_userName.sendKeys(Constants.PROCTOR_USERID);
+
+        passValueToElement(txt_userName,Constants.PROCTOR_USERID);
     }
 
     public void setPassword()
     {
-        txt_PassWord.sendKeys(Constants.PROCTOR_PWD);
+        passValueToElement(txt_PassWord,Constants.PROCTOR_PWD);
     }
 
     public void clickOnButton()

@@ -35,9 +35,11 @@ public class StepperForAssessmentProctor extends BaseClassForDM {
     }
 
     @When("User click on SignIn")
-    public void user_click_on_SignIn() {
+    public void user_click_on_SignIn() throws Exception{
         lPage= new LoginPageForDM(driver);
         lPage.clickOnButton();
+        System.out.println("Take screenShot");
+        takeAScreenShot();
     }
 
     @When("User navigate to Assessment page")

@@ -11,7 +11,7 @@ public final class Constants {
     public static final String STUDENT_URL = "http://onlinetestqand.rpcsys.hmco.com/StudentLogin.aspx";
     public static final String STUDENT_ID = "";
     public static final String SESSION_ID = "";
-    public static final String BROWSER = "chrome";
+
 }
 
 
