@@ -32,7 +32,7 @@ public class BaseClassForDM {
     
 
     /**
-     * This method is used to inilize driver based on user requirment.
+     * This method is used to initialize  driver based on user requirement.
      * @param Key
      * @throws Exception
      */
