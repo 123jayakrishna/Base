@@ -21,6 +21,9 @@ public class HomePageForDM extends BaseClassForDM {
     @FindBy(xpath = "//a[contains(text(),'Assessments')]/../../li/a[contains(text(),'Procto')]")
     private WebElement btn_proctor;
 
+    @FindBy(xpath = "//a[text()='Resources']/../a[text()='Sign out']")
+    private WebElement btn_SignOut;
+
 
 
     public void clickOnAssessment()
@@ -32,5 +35,9 @@ public class HomePageForDM extends BaseClassForDM {
     public  void clickOnProctor()
     {
         btn_proctor.click();
+    }
+    public void signOutFromDM()
+    {
+        btn_SignOut.click();
     }
 }

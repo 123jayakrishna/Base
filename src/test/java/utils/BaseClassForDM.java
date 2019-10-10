@@ -18,6 +18,7 @@ import java.io.File;
 public class BaseClassForDM {
 
     public static WebDriver driver;
+    public static WebDriver studentDriver;
     public WebDriverCommonUtils webDriverCommon;
 
     public BaseClassForDM(WebDriver driver)
@@ -52,6 +53,27 @@ public class BaseClassForDM {
         webDriverCommon.maximizeTheWindow(driver);
         webDriverCommon.waitForPageToLoad(driver,20);
         driver.get(Constants.PROCTOR_URL);
+    }
+
+
+    public void navigateToStudent(String Key) throws Exception
+    {
+        if(Key.equals("chrome") )
+        {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        }
+
+        else if (Key.equals("firefox"))
+        {
+            WebDriverManager.firefoxdriver().setup();
+            driver= new FirefoxDriver();
+        }
+
+        webDriverCommon= new WebDriverCommonUtils(driver);
+        webDriverCommon.maximizeTheWindow(driver);
+        webDriverCommon.waitForPageToLoad(driver,20);
+        driver.get(Constants.STUDENT_URL);
     }
 
 

@@ -1,15 +1,14 @@
 package Pages;
 
+import config.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BaseClassForDM;
-import config.Constants;
 
-public class StudentPage extends BaseClassForDM {
+public class Student extends BaseClassForDM {
 
-    public StudentPage(WebDriver driver)
-    {
+    public Student(WebDriver driver) {
         super(driver);
     }
 
@@ -30,4 +29,5 @@ public class StudentPage extends BaseClassForDM {
 
 
     }
+
 }
