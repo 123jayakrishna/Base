@@ -1,10 +1,8 @@
-package testsuits.steps;
+package dump;
 
-import Pages.LoginPageForDM;
-import Pages.Student;
+import pages.Student;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import utils.BaseClassForDM;
 
 import java.util.Iterator;
@@ -20,31 +18,34 @@ public class StepperForStudent extends BaseClassForDM {
     public void open_Chrome_and_open_DM() throws Exception {
         navigateTo("chrome");
 
+        System.out.println(getChromeHandle(driver));
+
     }
 
     @When("Open Firefox and Open Student")
     public void open_Firefox_and_Open_Student() throws Exception {
 
-        navigateToStudent("chrome");
+        navigateToStudent("firefox");
+        System.out.println(getFirefoxHandle(driver));
+
 
 
         Set<String> s= driver.getWindowHandles();
+        System.out.println(s.size());
         Iterator<String> it= s.iterator();
-
-
+        System.out.println(it.next());
 
         while (it.hasNext())
         {
             String child= it.next();
+            System.out.println(child);
             driver.switchTo().window(child);
         }
 
-        System.out.println("---------");
-        System.out.println(driver.getTitle());
-        System.out.println("---------");
-        System.out.println(driver.getCurrentUrl());
         Student st= new Student(driver);
         st.logIntoStudentPage();
+       // driver.switchTo().window(parent);
+        driver.getTitle();
 
 
 

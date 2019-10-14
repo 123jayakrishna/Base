@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,7 +46,7 @@ public class LoginPageForDM extends BaseClassForDM {
         passValueToElement(txt_PassWord,Constants.PROCTOR_PWD);
     }
 
-    public void clickOnButton()
+    public void clickOnSignIn()
     {
         btn_click.click();
     }

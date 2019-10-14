@@ -1,13 +1,13 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.BaseClassForDM;
 
-public class AssessmentHomePage extends BaseClassForDM {
+public class TestAssessmentHomePage extends BaseClassForDM {
 
-    public AssessmentHomePage(WebDriver driver)
+    public TestAssessmentHomePage(WebDriver driver)
     {
         super(driver);
     }

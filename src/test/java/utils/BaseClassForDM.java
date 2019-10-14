@@ -28,8 +28,6 @@ public class BaseClassForDM {
     }
 
 
-
-
     /**
      * This method is used to initialize  driver based on user requirement.
      * @param Key
@@ -92,10 +90,6 @@ public class BaseClassForDM {
     }
 
 
-
-
-
-
     /**
      * This method is used to take screenShot.
      * @throws Exception
@@ -106,4 +100,19 @@ public class BaseClassForDM {
         File dst= new File("./ScreenShots/"+methodName+".png");
         FileUtils.copyFile(src,dst);
     }
+
+
+    public String getChromeHandle(WebDriver driver)
+    {
+        String parent= driver.getWindowHandle();
+        return parent;
+    }
+
+    public String getFirefoxHandle(WebDriver driver)
+    {
+        String child= driver.getWindowHandle();
+        return child;
+    }
+
+
 }

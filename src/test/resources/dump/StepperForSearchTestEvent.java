@@ -1,6 +1,6 @@
-package testsuits.steps;
+package dump;
 
-import Pages.*;
+import pages.*;
 import utils.BaseClassForDM;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -11,7 +11,7 @@ public class StepperForSearchTestEvent extends BaseClassForDM {
     HomePageForDM hPage;
     TestOverViewPage tOverPage;
     LoginPageForDM lPage;
-    AssessmentHomePage aHomePage;
+    TestAssessmentHomePage aHomePage;
     LocationAndGradePage loGPage;
 
 
