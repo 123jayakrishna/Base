@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,10 @@ public class HomePageForDM extends BaseClassForDM {
     private WebElement btn_TestEvents;
 
     @FindBy(xpath = "//a[contains(text(),'Assessments')]/../../li/a[contains(text(),'Procto')]")
-    private WebElement btn_proctor;
+    private WebElement btn_proctorScanning;
+
+    @FindBy(xpath = "//a[contains(text(),'Proctoring/Scanning')]/../ul/li/a[text()='Proctoring']")
+    private WebElement btn_Proctoring;
 
     @FindBy(xpath = "//a[text()='Resources']/../a[text()='Sign out']")
     private WebElement btn_SignOut;
@@ -34,7 +37,9 @@ public class HomePageForDM extends BaseClassForDM {
 
     public  void clickOnProctor()
     {
-        btn_proctor.click();
+        btn_proctorScanning.click();
+        btn_Proctoring.click();
+
     }
     public void signOutFromDM()
     {

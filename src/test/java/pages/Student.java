@@ -1,6 +1,5 @@
-package Pages;
+package pages;
 
-import config.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,13 +20,29 @@ public class Student extends BaseClassForDM {
     @FindBy(id = "btnLogin1")
     private WebElement btn_Login;
 
-    public void logIntoStudentPage()
+
+
+    public void setStudentID(String ID)
     {
-        txt_StudentId.sendKeys(Constants.STUDENT_ID);
-        txt_SessionCode.sendKeys(Constants.SESSION_ID);
+        txt_StudentId.sendKeys(ID);
+    }
+
+    public void setSessionCode(String code) throws Exception {
+
+        txt_SessionCode.click();
+        txt_SessionCode.clear();
+        Thread.sleep(3000);
+        txt_SessionCode.sendKeys(code);
+    }
+
+    public void clickonLogin()
+    {
         btn_Login.click();
+    }
 
-
+    public void clickOnSessionCode()
+    {
+        txt_SessionCode.click();
     }
 
 }

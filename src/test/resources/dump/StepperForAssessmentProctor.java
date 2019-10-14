@@ -1,8 +1,8 @@
-package testsuits.steps;
+package dump;
 
 import utils.BaseClassForDM;
-import Pages.HomePageForDM;
-import Pages.LoginPageForDM;
+import pages.HomePageForDM;
+import pages.LoginPageForDM;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
